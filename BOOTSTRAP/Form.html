@@ -11,26 +11,31 @@
 </head>
 <body>
     <div class="container col-lg-6 col-md-9 col-sm-12">
-        <div class="row justify-content-center bg-dark text-center text-light">
-            <i class="bi bi-bootstrap-fill"></i>
-            <p class="" style="color: cornsilk;">Checkoutform</p>
-            <h6 style="word-spacing: 2px;">Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</h6>
+        <div>
+            <div class="text-center bg-dark text-light">
+                <i class="bi bi-bootstrap-fill"></i>
+                <p class="" style="color: cornsilk;">Checkoutform</p>
+                <p class="lead">Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>    
+            </div>
             <div class="row">
                 <div class="col-8">
-                    <p class="fw-bold">Billing Address</p>
+                    <p class="fw-bold h4">Billing Address</p>
                     <div class="row">
-                        <div class="col">
+                        <div class="col-6">
                             <label class="form-label">First name</label>
                             <input type="text" class="form-control" />
                         </div>
-                        <div class="col">
+                        <div class="col-6">
                             <label class="form-label">Lastname</label>
                             <input type="text" class="form-control" />
                         </div>
                     </div>
                     <div>
                         <label class="form-label">Username</label>
-                        <input type="text" class="form-control" />
+                            <div class="input-group">
+                                <span class="input-group-text">@</span>
+                                <input type="text" class="form-control" /> 
+                            </div>   
                     </div>
                     <div>
                         <label class="form-label">Email(Optional)</label>
@@ -64,16 +69,44 @@
                                 <input type="number" class="form-control" />
                         </div>
                     </div>
-                    <div>
-                        <input class="form-check-input" type="checkbox" />Shipping address is the same as my billing address
+                    <div class="mt-3">
+                        <input class="form-check-input " type="checkbox" />Shipping address is the same as my billing address
                         <br>
                         <input class="form-check-input" type="checkbox" />Save this information for next time
                     </div>
+                    <hr class="text-danger">
+                    <p class="fw-bold h4">PAYMENT</p>
+                    <input class="form-check-input mb-2" type="checkbox" />Credit Card
+                    <br>
+                    <input class="form-check-input mb-2" type="checkbox" />Debit Card
+                    <br>
+                    <input class="form-check-input mb-2" type="checkbox" />Paypal
+                    <br>
+                    <div class="row">
+                        <div class="col-6">
+                            <label class="form-label">Name on Card</label>
+                            <input type="text" class="form-control" />
+                            <small class="text-muted">Full name as displayed on card</small>
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label">Credit card no</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>  
+                    <div class="row">
+                        <div class="col-3">
+                            <label class="form-label">Expiration</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                        <div class="col-3">
+                            <label class="form-label">CVV</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <hr class="mt-3">
+                    <button class="btn btn-outline-primary col-12 ">Continue to checkout</button>
                 </div>
-                <div class="col-4">
-
                 </div>
-            </div>
         </div>
     </div>
     
