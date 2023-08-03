@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+   
+</head>
+<body>
+    <!-- push,pop,length,slice,splice,shift,unshift,sort,reverse,map,filter,delete -->
+    <script>
+        // let colorsname=["pink","Blue","Purple","Black","white","gray","red","dark pink"];
+
+        // alert("my colors name "+colorsname)
+
+        const colorsname=new Array("pink","blue","purple","black","white","gray","red","orange");
+
+        colorsname.push("green");
+        colorsname.unshift("sky blue")
+
+
+        // colorsname.pop();
+        // colorsname.shift();
+
+        // const color1= colorsname.slice(3);
+        
+        // delete colorsname[1];
+
+        // document.write(colorsname)
+
+        // function myfavcolors(data)
+        // {
+        //     alert(data);
+        // }
+        // colorsname.map(myfavcolors)
+        
+        // colorsname.sort()
+        // colorsname.reverse()
+
+        // colorsname.splice(4 ,2,"skyblue1","pink1") //(index,replace,replcevalue1,replacevalue2)
+            colorsname.splice(3,3); //(starting index,delete a value count)
+        colorsname.map((data)=>
+        {
+            document.writeln("<b><i>"+data+"</i></b>")
+        })
+
+
+    </script>
+    
+</body>
+</html>
