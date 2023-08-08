@@ -1,0 +1,16 @@
+<html>
+ <body>
+<script>
+function formdata() 
+{
+let firstname1= document.getElementsByTagName("input")[0].value;
+document.write("The first name you entered is " + firstname1);
+}
+</script>
+<form>
+    Enter your First Name: 
+    <input type="text" id="firstname"/><br>
+    <input type="submit" value="Submit" onclick="formdata()"/>
+</form>
+</body>
+</html>

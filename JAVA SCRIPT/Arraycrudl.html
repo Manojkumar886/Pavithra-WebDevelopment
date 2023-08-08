@@ -19,6 +19,7 @@
             -webkit-background-clip: text;
             color: transparent;
         }
+       
     </style>
      <script src="Arraycrudl.js"></script>
 </head>
@@ -33,13 +34,17 @@
                     onclick="creating()">Create</button>
                     <button class="btn btn-outline-info"
                     onclick="listall()">List</button>
-                    <button class="btn btn-outline-warning">Update</button>
-                    <button class="btn btn-outline-danger">Delete</button>
-                    <button class="btn btn-outline-secondary">Search</button>
-                    <button class="btn btn-outline-primary">Sort</button>
+                    <button class="btn btn-outline-warning"
+                    onclick="updating()">Update</button>
+                    <button class="btn btn-outline-danger"
+                    onclick="removing()">Delete</button>
+                    <button class="btn btn-outline-secondary"
+                    onclick="alert(searching()+'has been founded')">Search</button>
+                    <button class="btn btn-outline-primary"
+                    onclick="sorting()">Sort</button>
                 </div>
                 <strong id="mycolors">
-                    welcome
+                    
                 </strong>
             </div>
          </div>
