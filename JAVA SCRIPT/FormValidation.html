@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+    <script src="FormValidation.js"></script>
+</head>
+<body align="center">
+    <form name="myform" align="center" onsubmit="return Validation()">
+        <h1>Basic Form (Validation) </h1>
+        <tr>
+            <td>
+                <label>FirstName</label>
+            </td>
+            <td>
+                <input type="text" name="fname" />
+                <span id="fname1"></span>
+            </td>
+        </tr>
+        <br>
+        <br>
+        <tr>
+            <td>
+                <label>Address</label>
+            </td>
+            <td>
+                <input type="text" name="add" />
+                <span id="add1"></span>
+            </td>
+        </tr>
+        <br>
+        <br>
+        <tr>
+            <td>
+                <label>Mobileno</label>
+            </td>
+            <td>
+                <input type="tel" name="phone" />
+                <span id="phone1"></span>
+            </td>
+        </tr>
+        <br>
+        <br>
+        <tr>
+            <td>
+                <label>Email</label>
+            </td>
+            <td>
+                <input type="email" name="email" />
+                <span id="email1"></span>
+            </td>
+        </tr>
+        <br>
+        <br>
+        <tr>
+            <td>
+                <label>Password</label>
+            </td>
+            <td>
+                <input type="password" name="pass" />
+                <span id="pass1"></span>
+            </td>
+        </tr>
+        <br>
+        <br>
+        <tr>
+            <td>
+                <input type="submit" value="submit" />
+            </td>
+            <td>
+                <input type="reset" value="Cancel" />
+            </td>
+        </tr>
+    </form>
+    
+</body>
+</html>
