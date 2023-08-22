@@ -49,5 +49,5 @@ let Validation=()=>
         reloading=false;      
     }
 
-    return reloading;
+return reloading
 }

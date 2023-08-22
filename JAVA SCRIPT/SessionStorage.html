@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SessionStorage</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form align="center" name="login">
+        <table>
+            <thead>
+                <tr>
+                    <td>LOGIN FORM</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label>USERNAME</label>
+                        <input placeholder="Enter your username" type="text" name="user" />
+                        <span id="user1"></span>
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <br>
+                    <br>
+                    <td>
+                        <label>PASSWORD</label>
+                        <input type="password" name="pass"/>
+                        <span id="pass1"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit" onclick=" return activation()">Submit</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <script>
+       let activation=()=>
+       {
+            let username=document.forms["login"].user.value
+            let password=document.forms["login"].pass.value
+
+            let reload=true;
+
+            if(username.length<=0)
+            {
+                document.getElementById("user1").innerHTML="username should not empty";
+                reload=false
+            }
+            if(password.length<=0)
+            {
+                document.getElementById("pass1").innerHTML="password should not empty";
+                reload=false
+            }
+            else if((username="Maddy123")&&(password="Maddy@123"))
+            {
+                sessionStorage.setItem(username,password);
+                alert("login successfully")
+            }
+            return reload;
+       }
+    </script>
+</body>
+</html>
